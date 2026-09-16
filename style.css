@@ -175,3 +175,9 @@ nav{background:var(--nav)}
 .dateCard{right:10px!important;bottom:38px!important}
 @media(max-width:620px){.dateCard{right:10px!important;bottom:38px!important}}
 @media(max-width:390px){.dateCard{right:8px!important;bottom:36px!important}}
+
+/* V1.3.3 — final hero date placement: fully visible inside hero, white text */
+.dateCard{right:10px!important;bottom:64px!important;color:#fff!important}
+.dateCard b,.dateCard span{color:#fff!important;text-shadow:0 2px 7px rgba(0,0,0,.58)!important}
+@media(max-width:620px){.dateCard{right:10px!important;bottom:64px!important}}
+@media(max-width:390px){.dateCard{right:8px!important;bottom:62px!important}}
