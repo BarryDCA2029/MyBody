@@ -169,3 +169,9 @@ nav{background:var(--nav)}
 .dateCard b,.dateCard span{text-shadow:0 1px 5px rgba(255,255,255,.62)}
 @media(max-width:620px){.dateCard{right:10px!important;bottom:10px!important}}
 @media(max-width:390px){.dateCard{right:8px!important;bottom:8px!important}}
+
+/* V1.3.2 — anchor date to the VISIBLE lower-right of hero.
+   Main card overlaps hero by 28px, so 38px = 28px overlap + 10px visible inset. */
+.dateCard{right:10px!important;bottom:38px!important}
+@media(max-width:620px){.dateCard{right:10px!important;bottom:38px!important}}
+@media(max-width:390px){.dateCard{right:8px!important;bottom:36px!important}}

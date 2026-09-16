@@ -1,4 +1,4 @@
-const CACHE = "my-body-shell-v1.3.1";
+const CACHE = "my-body-shell-v1.3.2";
 const CORE = ["./", "./index.html?v=1.3", "./style.css?v=1.3", "./app.js?v=1.3", "./manifest.json?v=1.3", "./hero.jpg", "./body-start.png", "./body-now.png"];
 self.addEventListener("install", e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).catch(()=>{})); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
