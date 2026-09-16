@@ -1,12 +1,10 @@
-MY BODY V1.9.3
+MY BODY V1.9.4
 
-PWA Update Fix
-- Same UI and localStorage data model as V1.9.1
-- Versioned CSS/JS/manifest URLs to prevent stale asset reuse
-- PWA start_url includes the current release version
-- Cache-control meta directives added to the app shell
-- Visible V1.9.3 badge on Home
+Personal offline-first health tracker PWA.
 
-Important: no localStorage keys were changed.
-
-V1.9.3: fixes Home weight chart rendering, Activity/Food save render regression, and improves Estimated calorie deficit readability. Preserves localStorage key mybody_v12_data.
+V1.9.4 hotfix:
+- Mounjaro Upcoming automatically becomes completed when a shot is already recorded for the same date.
+- Completed Upcoming items move out of the Upcoming list into History.
+- Home Mounjaro/Upcoming status reflects recorded data.
+- Preserves V1.9.3 UI, chart/activity/food fixes, and localStorage key mybody_v12_data.
+- PWA cache/version bumped to V1.9.4.
