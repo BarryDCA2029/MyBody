@@ -94,3 +94,15 @@ nav{background:var(--nav)}
  .dateCard{width:270px!important;right:14px!important;padding:12px 12px!important}
  .dateCard b{font-size:20px!important}
 }
+
+/* V1.9.7 — compact date + IF HH:MM:SS + progress bar */
+.dateCard{width:270px!important;padding:10px 16px!important;display:flex!important;flex-direction:column!important;align-items:center!important;gap:2px!important}
+.dateCard b{display:block!important;order:1;font-size:22px!important;line-height:1.05!important;margin:0!important;white-space:nowrap}
+.dateCard span{display:block!important;order:2;font-size:15px!important;line-height:1.05!important;color:#48615f!important;font-weight:700!important;margin:2px 0 0!important}
+.ifProgress{width:100%;height:7px;border-radius:999px;background:#dce7e4;overflow:hidden;margin:0 0 9px}
+.ifProgress i{display:block;height:100%;width:0;border-radius:inherit;transition:width .8s linear;background:#9aab9f}
+.ifProgress i.eating{background:#078a56}
+.ifProgress i.fasting{background:#8b9b91}
+.ifBlock>p{margin-bottom:8px!important}
+.ifBlock>strong{font-variant-numeric:tabular-nums;letter-spacing:.5px}
+@media(max-width:620px){.dateCard{width:235px!important;padding:9px 11px!important}.dateCard b{font-size:18px!important}.dateCard span{font-size:13px!important}.ifProgress{height:6px;margin-bottom:7px}.ifBlock>strong{font-size:25px!important}}

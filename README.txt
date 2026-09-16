@@ -1,10 +1,12 @@
-MY BODY V1.9.6
+MY BODY V1.9.7
 
-New in V1.9.6:
+New in V1.9.7:
 - Home weight area split 60/40: Current Weight + IF 14:10.
 - IF schedule fixed to eating 08:00–18:00 and fasting 18:00–08:00.
 - Live countdown changes automatically between eating and fasting windows.
 - Daily IF result can be marked Success / Not successful after the fasting window starts.
 - IF history keeps unrecorded days neutral and shows success rate + streak.
 - Preserves the existing localStorage key mybody_v12_data and all prior data.
-- PWA cache/version bumped to V1.9.6.
+- PWA cache/version bumped to V1.9.7.
+
+V1.9.7: Date is two lines (Month D, YYYY / weekday); IF countdown uses HH:MM:SS; eating/fasting progress bar restored.
