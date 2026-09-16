@@ -1,10 +1,10 @@
-MY BODY V1.9.4
+MY BODY V1.9.5
 
-Personal offline-first health tracker PWA.
-
-V1.9.4 hotfix:
-- Mounjaro Upcoming automatically becomes completed when a shot is already recorded for the same date.
-- Completed Upcoming items move out of the Upcoming list into History.
-- Home Mounjaro/Upcoming status reflects recorded data.
-- Preserves V1.9.3 UI, chart/activity/food fixes, and localStorage key mybody_v12_data.
-- PWA cache/version bumped to V1.9.4.
+New in V1.9.5:
+- Home weight area split 60/40: Current Weight + IF 14:10.
+- IF schedule fixed to eating 08:00–18:00 and fasting 18:00–08:00.
+- Live countdown changes automatically between eating and fasting windows.
+- Daily IF result can be marked Success / Not successful after the fasting window starts.
+- IF history keeps unrecorded days neutral and shows success rate + streak.
+- Preserves the existing localStorage key mybody_v12_data and all prior data.
+- PWA cache/version bumped to V1.9.5.
