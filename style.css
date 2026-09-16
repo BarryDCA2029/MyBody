@@ -181,3 +181,77 @@ nav{background:var(--nav)}
 .dateCard b,.dateCard span{color:#fff!important;text-shadow:0 2px 7px rgba(0,0,0,.58)!important}
 @media(max-width:620px){.dateCard{right:10px!important;bottom:64px!important}}
 @media(max-width:390px){.dateCard{right:8px!important;bottom:62px!important}}
+
+
+/* V1.4 — compact polish + editable histories */
+/* Approved Hero: stronger motivation, date low-right but fully inside visible hero */
+.heroText h1{font-weight:950!important;text-shadow:0 1px 1px rgba(0,0,0,.08)}
+.heroText small{font-weight:900!important;letter-spacing:.2px}
+.dateCard{right:10px!important;bottom:42px!important;color:#fff!important;z-index:4!important}
+.dateCard b,.dateCard span{color:#fff!important;text-shadow:0 2px 7px rgba(0,0,0,.62)!important}
+@media(max-width:620px){.dateCard{right:10px!important;bottom:40px!important}}
+@media(max-width:390px){.dateCard{right:8px!important;bottom:38px!important}}
+
+/* IF information centered; action buttons retain their existing placement */
+.ifBlock{text-align:center!important;align-items:center!important}
+.ifBlock .ifHead,.ifBlock>b,.ifBlock>p,.ifBlock>.ifCountdownLabel,.ifBlock>strong{width:100%;text-align:center!important}
+.ifBlock .ifHead{justify-content:center!important}
+.ifBlock .ifProgress{width:100%!important}
+.ifBlock .ifMarkBtn{align-self:center}
+.ifBlock .ifHistoryLink{align-self:flex-end}
+
+/* Quick cards: same family, less vertical scrolling */
+.quick{min-height:0!important;padding:16px 14px!important;row-gap:4px!important}
+.quick i{width:50px!important;height:50px!important;font-size:25px!important}
+.quick em{margin-top:8px!important;padding:10px 8px!important;white-space:nowrap!important;font-size:12px!important}
+.quick.mounjaro em{white-space:nowrap!important}
+
+/* Daily missions: four truly-daily items, compact rows */
+.mission{padding-bottom:12px!important}
+.mission label{padding:11px 4px!important;min-height:0!important}
+.mission input{width:24px!important;height:24px!important}
+
+/* Summary: number + unit on one line and balanced TDEE/deficit */
+.summary19 .metricGrid19 p{min-height:108px!important;padding:11px 12px!important;grid-template-rows:auto auto!important;align-content:center!important}
+.summary19 .metricGrid19 p>b{display:inline!important;grid-column:2!important;font-size:29px!important;line-height:1!important}
+.summary19 .metricGrid19 p>small{display:inline!important;grid-column:2!important;margin-left:5px!important;font-size:13px!important;align-self:end!important}
+.summary19 .metricGrid19 p>em{margin-top:6px!important;font-size:11px!important}
+.energyStrip19{grid-template-columns:1fr 1fr!important;align-items:stretch!important}
+.energyStrip19>div{display:flex!important;flex-wrap:wrap;align-content:center}
+.energyStrip19>div>span{width:100%;font-size:13px!important;font-weight:850!important}
+.energyStrip19>div:first-child span{white-space:normal!important}
+.summary19 .deficitMini{text-align:center!important;align-items:center!important;justify-content:center!important}
+.summary19 .deficitMini span{font-size:13px!important;text-align:center!important}
+.summary19 .deficitMini b{font-size:25px!important;text-align:center!important;width:100%}
+
+/* Weight chart: use the empty space instead of making the card taller */
+.chartCard #chart{height:285px!important;margin-top:-8px!important;margin-bottom:-8px!important}
+.chartCard .achievement{margin-top:2px!important}
+
+/* Food history: wider food-name column, kcal/protein one line, tighter rows/cards */
+.dayCard{margin-bottom:12px!important}
+.dayCardHead{padding:10px 14px!important}
+.mealRow{grid-template-columns:62px minmax(0,1fr) auto!important;gap:8px!important;padding:10px 14px!important;min-height:0!important;align-items:center!important}
+.mealRow strong{font-size:13px!important}
+.mealRow p{margin:0!important;line-height:1.25!important;font-size:14px!important;min-width:0!important}
+.mealRow em{white-space:nowrap!important;font-size:13px!important}
+.mealRow em small{display:inline!important;font-size:11px!important;margin-left:2px!important}
+.dayTotal{padding:10px 14px!important}
+.dayTotal b{white-space:nowrap!important}
+.dayTotal b small{display:inline!important;font-size:11px!important}
+
+/* IF history: compact and every day is editable */
+.ifDayRow{padding:10px 12px!important;margin-bottom:6px!important;border-radius:14px!important;gap:8px!important}
+.ifDayRow b{font-size:16px!important}
+.ifDayRow small{font-size:12px!important;margin-top:1px!important}
+.ifDayRow em{font-size:12px!important;white-space:nowrap!important}
+.ifActions{gap:5px!important;margin-top:6px!important;flex-wrap:wrap}
+.ifActions button{padding:6px 8px!important;border-radius:9px!important;font-size:11px!important}
+.ifActions .clearBtn{background:#eef2f3;color:#71848b}
+
+/* Mounjaro history: date / description / dose get breathing room and are tappable */
+.shotItem{grid-template-columns:minmax(112px,1fr) auto!important;column-gap:18px!important;cursor:pointer!important}
+.shotItem>div:first-child{display:grid!important;grid-template-columns:max-content 1fr!important;align-items:center!important;column-gap:14px!important;min-width:0!important}
+.shotItem>div:first-child b,.shotItem>div:first-child small{margin:0!important}
+.shotItem>div:first-child small{white-space:nowrap!important}
+.shotItem .value{white-space:nowrap!important}
