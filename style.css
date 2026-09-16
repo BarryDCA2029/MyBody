@@ -144,3 +144,28 @@ nav{background:var(--nav)}
 .heroText{top:76px!important}
 @media(max-width:760px){.heroText{top:68px!important}}
 @media(max-width:390px){.heroText{top:64px!important}}
+
+/* V1.3.1 — date text only, anchored to the hero's bottom-right */
+.dateCard{
+  top:auto!important;
+  right:10px!important;
+  bottom:10px!important;
+  width:auto!important;
+  min-width:0!important;
+  min-height:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-end!important;
+  text-align:right!important;
+  gap:2px!important;
+}
+.dateCard b,.dateCard span{text-shadow:0 1px 5px rgba(255,255,255,.62)}
+@media(max-width:620px){.dateCard{right:10px!important;bottom:10px!important}}
+@media(max-width:390px){.dateCard{right:8px!important;bottom:8px!important}}
