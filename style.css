@@ -106,3 +106,23 @@ nav{background:var(--nav)}
 .ifBlock>p{margin-bottom:8px!important}
 .ifBlock>strong{font-variant-numeric:tabular-nums;letter-spacing:.5px}
 @media(max-width:620px){.dateCard{width:235px!important;padding:9px 11px!important}.dateCard b{font-size:18px!important}.dateCard span{font-size:13px!important}.ifProgress{height:6px;margin-bottom:7px}.ifBlock>strong{font-size:25px!important}}
+
+
+/* V1.9.8 — final Home polish */
+/* Date: lower-right, lighter/translucent so it blends into hero while staying legible */
+.dateCard{top:auto!important;bottom:16px!important;right:24px!important;background:rgba(255,255,255,.72)!important;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 8px 22px rgba(0,0,0,.08)!important}
+/* IF: visually centered inside its 50% column */
+.ifBlock{justify-content:center!important}
+/* Current 98.8 figure: 3% smaller than V1.9.7 */
+.topHealthSplit .weightNow b{font-size:58.2px!important}
+/* Countdown: 2% smaller than V1.9.7 */
+.ifBlock>strong{font-size:27.44px!important}
+@media(max-width:760px){
+ .dateCard{top:auto!important;bottom:14px!important;right:18px!important}
+ .topHealthSplit .weightNow b{font-size:46.56px!important}
+ .ifBlock>strong{font-size:24.5px!important}
+}
+@media(max-width:390px){
+ .dateCard{top:auto!important;bottom:12px!important;right:14px!important}
+ .topHealthSplit .weightNow b{font-size:42.68px!important}
+}
