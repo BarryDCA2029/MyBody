@@ -1,0 +1,9 @@
+const seed=[['24 มิ.ย. 69',109.8],['9 ก.ค. 69',105.7],['22 ก.ค. 69',102.5],['2 ก.ย. 69',101.9],['9 ก.ย. 69',101.4],['15 ก.ย. 69',99.1],['16 ก.ย. 69',98.8]];
+let data=JSON.parse(localStorage.getItem('mybody.weights')||'null')||seed;let meals=+localStorage.getItem('mybody.meals')||0,water=+localStorage.getItem('mybody.water')||0,activity=+localStorage.getItem('mybody.activity')||0;
+function render(){history.innerHTML=data.map(x=>`<div class=row><span>${x[0]}</span><b>${x[1].toFixed(1)} kg</b></div>`).join('');let max=112,min=95;chart.innerHTML='<div class=bar>'+data.map(x=>`<div class=point style="height:${Math.max(5,(x[1]-min)/(max-min)*100)}%"><span>${x[1]}</span></div>`).join('')+'</div>';mealCount.textContent=`${meals} / 3`;waterEl();document.getElementById('activity').textContent=activity+' นาที'}
+function addWeight(){let v=prompt('น้ำหนักวันนี้ (kg)','98.8');if(v&&!isNaN(v)){data[data.length-1]=['16 ก.ย. 69',+v];localStorage.setItem('mybody.weights',JSON.stringify(data));render()}}
+function addMeal(){meals++;localStorage.setItem('mybody.meals',meals);render();alert('บันทึกมื้ออาหารแล้ว • ใน V1 รูปอาหารจะเลือกจากกล้อง/คลังรูปและเก็บในเครื่อง')}
+function addWater(){water++;localStorage.setItem('mybody.water',water);waterEl()}function waterEl(){document.getElementById('water').textContent=`${water} / 8 แก้ว`}
+function addActivity(){let v=prompt('กิจกรรมกี่นาที?','20');if(v&&!isNaN(v)){activity+=+v;localStorage.setItem('mybody.activity',activity);render()}}
+function shot(){localStorage.setItem('mybody.shot.2026-09-16','7.5');alert('บันทึก Mounjaro 7.5 mg • ตามแพทย์สั่งแล้ว')}
+document.querySelectorAll('input[type=checkbox]').forEach(x=>x.onchange=()=>{let n=[...document.querySelectorAll('input[type=checkbox]')].filter(x=>x.checked).length;score.textContent=n+'/5'});render();
