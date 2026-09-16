@@ -1,4 +1,4 @@
-MY BODY V1.2
+MY BODY V1.3
 
 New in V1.9.8:
 - Home weight area split 60/40: Current Weight + IF 14:10.
@@ -13,4 +13,4 @@ V1.9.8: Date is two lines (Month D, YYYY / weekday); IF countdown uses HH:MM:SS;
 
 V1.9.8: final Home polish — date card lower/right and more translucent, IF content centered, current-weight figure reduced 3%, IF countdown reduced 2%.
 
-V1.2: Date and weekday increased 5%; version moved directly beneath the date at the lower-right of the hero.
+V1.3: Date and weekday increased 5%; version moved directly beneath the date at the lower-right of the hero.
