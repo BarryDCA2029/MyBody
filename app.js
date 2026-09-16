@@ -22,3 +22,13 @@ function editActivity(id){let x=data.activities.find(a=>a.id===id);if(!x)return;
 function deleteActivity(id){if(!confirm('ลบรายการกิจกรรมนี้?'))return;data.activities=data.activities.filter(x=>x.id!==id);save();openSection('activity')}
 function openTdee(){modal.classList.remove('hidden');modalTitle.textContent='ตั้งค่า Estimated TDEE';formFields.innerHTML=`<div class="field"><label>พลังงานที่ใช้ต่อวันโดยประมาณ (kcal/day)</label><input name="tdee" type="number" min="500" step="10" value="${data.settings.tdee||''}" placeholder="กรอกค่าที่ประเมินไว้"></div><p class="note">ใช้เพื่อคำนวณ Estimated calorie deficit เท่านั้น หากยังไม่มีค่าที่เชื่อถือได้ให้เว้นว่าง แอปจะไม่เดาให้เอง</p>`;entryForm.onsubmit=e=>{e.preventDefault();let o=Object.fromEntries(new FormData(e.target).entries());data.settings.tdee=o.tdee?+o.tdee:null;save();closeModal();openSection('food')}}
 render();
+
+
+// V1.9.2 PWA update support. Does not alter localStorage.
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js?v=1.9.2", {updateViaCache:"none"})
+      .then(reg => reg.update())
+      .catch(() => {});
+  });
+}
