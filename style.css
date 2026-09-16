@@ -62,3 +62,35 @@ nav{background:var(--nav)}
 .topHealthSplit{display:grid;grid-template-columns:60% 40%;border-bottom:1px solid #e1eaee}.topHealthSplit .weightBlock{border:0;border-right:1px solid #e1eaee;border-bottom:0}.ifBlock{padding:20px 22px;text-align:left;display:flex;flex-direction:column;justify-content:center;cursor:pointer;background:linear-gradient(145deg,#fbfdfc,#f1f8f4)}.ifHead{display:flex;align-items:center;justify-content:space-between;gap:8px}.ifHead span{font-size:18px;font-weight:900}.ifHead button{border:0;background:transparent;color:#0b6fc2;font-weight:800;padding:7px}.ifBlock>b{font-size:22px;color:#078a56;margin-top:8px}.ifBlock>p{margin:4px 0;color:#647980;font-size:14px}.ifBlock>strong{font-size:17px;color:#17354a;margin-top:4px}.ifMarkBtn{margin-top:12px;border:0;border-radius:16px;padding:11px 12px;background:#e5f4ea;color:#087b4c;font-weight:850}.ifMarkBtn.done{background:#078a56;color:#fff}.ifMarkBtn.fail{background:#f4f0ea;color:#795f3d}.ifHistorySummary{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}.ifStat{background:#fff;border:1px solid #dfe8e6;border-radius:18px;padding:14px}.ifStat span,.ifStat small{display:block;color:#6a7e86}.ifStat b{display:block;font-size:25px;color:#078a56;margin:3px 0}.ifDayRow{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;background:#fff;border:1px solid #dfe8e6;border-radius:18px;padding:14px;margin-bottom:9px}.ifDayRow b,.ifDayRow small{display:block}.ifDayRow small{color:#71848b;margin-top:3px}.ifDayRow em{font-style:normal;font-weight:850}.ifDayRow .ok{color:#078a56}.ifDayRow .no{color:#8b704c}.ifDayRow .none{color:#829198}.ifActions{display:flex;gap:8px;margin-top:8px}.ifActions button{border:0;border-radius:12px;padding:9px 11px;font-weight:800}.ifActions .yes{background:#e5f4ea;color:#087b4c}.ifActions .noBtn{background:#f4f0ea;color:#795f3d}
 @media(max-width:760px){.topHealthSplit{grid-template-columns:60% 40%}.topHealthSplit .weightBlock{padding:18px 12px 16px}.topHealthSplit .weightBlock .primary{position:static;margin-top:5px}.topHealthSplit .weightNow b{font-size:50px}.topHealthSplit .weightNow small{font-size:21px}.topHealthSplit .loss{font-size:15px;padding:7px 9px}.topHealthSplit .weightBlock p{font-size:12px}.ifBlock{padding:15px 12px}.ifHead span{font-size:15px}.ifHead button{font-size:11px;padding:4px}.ifBlock>b{font-size:17px}.ifBlock>p{font-size:12px}.ifBlock>strong{font-size:14px}.ifMarkBtn{font-size:12px;padding:9px 7px}.compare{border-top:0}}
 @media(max-width:390px){.topHealthSplit{grid-template-columns:58% 42%}.topHealthSplit .weightNow b{font-size:44px}.topHealthSplit .weightNow small{font-size:18px}.ifBlock{padding:13px 9px}.ifHead span{font-size:14px}.ifBlock>b{font-size:15px}.ifBlock>strong{font-size:12px}.ifMarkBtn{font-size:11px}}
+/* V1.9.6 — 50:50 Weight + IF refinement */
+.topHealthSplit{grid-template-columns:50% 50%!important}
+.topHealthSplit .weightBlock{padding:22px 18px 18px!important}
+.ifBlock{padding:20px 18px 16px!important;position:relative;display:flex;flex-direction:column;min-width:0}
+.ifHead{display:flex;align-items:center;justify-content:flex-start}
+.ifHead span{font-size:20px!important;font-weight:900}
+.ifBlock>b{font-size:20px!important;white-space:nowrap;margin-top:10px!important}
+.ifBlock>p{font-size:17px!important;font-weight:900!important;color:#142036!important;margin:6px 0 12px!important;white-space:nowrap}
+.ifCountdownLabel{display:block;font-size:15px;font-weight:750;color:#445b67;white-space:nowrap}
+.ifBlock>strong{display:block;font-size:28px!important;line-height:1.15;color:#d51f26!important;margin:3px 0 8px!important;font-weight:950;white-space:nowrap}
+.ifMarkBtn{margin-top:5px!important;margin-right:76px;font-size:12px!important}
+.ifHistoryLink{position:absolute;right:12px;bottom:12px;border:0;background:transparent;color:#0b6fc2;font-weight:850;padding:8px 4px}
+.dateCard{width:310px!important;padding:13px 18px!important}
+.dateCard span{display:none!important}
+.dateCard b{font-size:24px!important;line-height:1.15!important;margin:0!important;white-space:nowrap}
+@media(max-width:620px){
+ .topHealthSplit{grid-template-columns:50% 50%!important}
+ .topHealthSplit .weightBlock{padding:16px 10px 14px!important}
+ .topHealthSplit .weightNow b{font-size:48px!important}
+ .topHealthSplit .weightNow small{font-size:20px!important}
+ .topHealthSplit .loss{font-size:14px!important;padding:7px 8px!important}
+ .ifBlock{padding:14px 10px 12px!important}
+ .ifHead span{font-size:17px!important}
+ .ifBlock>b{font-size:16px!important;white-space:nowrap}
+ .ifBlock>p{font-size:14px!important;white-space:nowrap}
+ .ifCountdownLabel{font-size:12px!important}
+ .ifBlock>strong{font-size:22px!important;white-space:nowrap}
+ .ifMarkBtn{font-size:10px!important;margin-right:55px!important;padding:8px 5px!important}
+ .ifHistoryLink{font-size:10px!important;right:7px;bottom:12px}
+ .dateCard{width:270px!important;right:14px!important;padding:12px 12px!important}
+ .dateCard b{font-size:20px!important}
+}
