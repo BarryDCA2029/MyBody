@@ -309,3 +309,38 @@ nav{background:var(--nav)}
 .energyStrip19>div:first-child b,.summary19 .deficitMini b{
   margin:0!important;line-height:32px!important;font-size:25px!important;align-self:center!important;
 }
+
+
+/* V1.8 — approved final polish */
+/* Hero date: "forward" means two small steps LEFT from V1.7. */
+.dateCard{right:18px!important}
+@media(max-width:620px){.dateCard{right:18px!important}}
+@media(max-width:390px){.dateCard{right:16px!important}}
+
+/* Progress comparison: labels share one baseline; delta stays on one line.
+   Give the lower image area ~10% more breathing room without altering the photos. */
+.compare{padding-bottom:22px!important}
+.compare>div:first-child,.compare>div:last-of-type{align-self:start!important;padding-top:5px!important}
+.compare>div:first-child>span,.compare>div:last-of-type>span{display:block!important;line-height:24px!important;min-height:24px!important}
+.compare .delta b{white-space:nowrap!important;font-size:18px!important;line-height:1.1!important}
+.compare>p{margin-top:10px!important}
+@media(max-width:760px){.compare{padding-bottom:18px!important}}
+
+/* TDEE and Calorie Deficit: force identical heading and value baselines. */
+.energyStrip19{display:grid!important;grid-template-columns:1fr 1fr!important;align-items:start!important}
+.energyStrip19>div,.summary19 .deficitMini{
+  display:grid!important;grid-template-rows:20px 34px 18px!important;
+  align-items:center!important;align-content:start!important;padding-top:0!important;
+}
+.energyStrip19>div>span,.summary19 .deficitMini>span{
+  display:block!important;height:20px!important;line-height:20px!important;margin:0!important;
+  font-size:14px!important;font-weight:850!important;text-align:center!important;
+}
+.energyStrip19>div>b,.summary19 .deficitMini>b{
+  display:block!important;height:34px!important;line-height:34px!important;margin:0!important;
+  font-size:25px!important;text-align:center!important;align-self:center!important;
+}
+.energyStrip19>div>small,.summary19 .deficitMini>small{
+  display:block!important;height:18px!important;line-height:18px!important;margin:0!important;text-align:center!important;
+}
+.energyStrip19>div:first-child>small{visibility:hidden!important}
