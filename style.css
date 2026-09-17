@@ -371,3 +371,232 @@ nav{background:var(--nav)}
  .compare>div:first-child>b,.compare>div:last-of-type>b{font-size:14px!important}
  .compare .delta b{font-size:13px!important}
 }
+
+
+/* V1.8.3 — progress comparison + TDEE/Calorie alignment fix */
+/* Progress section: keep side information visually centered between the figure and the edge */
+.compare{
+  grid-template-columns:.84fr 1.18fr .56fr 1.18fr .84fr!important;
+  gap:4px!important;
+  padding:18px 16px 24px!important;
+  align-items:start!important;
+}
+.compare>div:first-child,
+.compare>div:last-of-type{
+  justify-self:center!important;
+  width:100%!important;
+  max-width:132px!important;
+  text-align:center!important;
+  align-self:center!important;
+  padding-top:0!important;
+}
+.compare>div:first-child>span,
+.compare>div:last-of-type>span{
+  display:block!important;
+  font-size:inherit!important;
+  line-height:22px!important;
+  min-height:22px!important;
+  text-align:center!important;
+}
+.compare>div:first-child>b,
+.compare>div:last-of-type>b{
+  display:block!important;
+  font-size:17px!important;
+  line-height:1.15!important;
+  white-space:nowrap!important;
+  letter-spacing:-.2px!important;
+  text-align:center!important;
+}
+.compare>div:first-child>small,
+.compare>div:last-of-type>small{
+  display:block!important;
+  line-height:1.45!important;
+  text-align:center!important;
+}
+.compare .delta{
+  justify-self:center!important;
+  align-self:center!important;
+}
+.compare .delta b{
+  font-size:15px!important;
+  line-height:1.05!important;
+  white-space:nowrap!important;
+}
+.compare .delta span{
+  font-size:12px!important;
+}
+.compare .delta em{
+  font-size:36px!important;
+  line-height:1!important;
+}
+.compare .bodyPhoto.start{background-position:60% center!important}
+.compare .bodyPhoto.now{background-position:40% center!important}
+.compare>p{margin-top:12px!important}
+
+/* Summary strip: make TDEE and Calorie Deficit sit on the same visual plane */
+.energyStrip19{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:0!important;
+  align-items:stretch!important;
+}
+.energyStrip19>div:first-child{
+  border-right:1px solid #b8d8c5!important;
+  padding-right:14px!important;
+  display:grid!important;
+  grid-template-columns:auto auto!important;
+  grid-template-rows:22px auto!important;
+  justify-content:center!important;
+  align-content:center!important;
+  column-gap:8px!important;
+  row-gap:8px!important;
+}
+.energyStrip19>div:first-child>span{
+  grid-column:1/-1!important;
+  grid-row:1!important;
+  width:100%!important;
+  height:auto!important;
+  line-height:1.2!important;
+  margin:0!important;
+  text-align:center!important;
+  font-size:14px!important;
+  font-weight:850!important;
+  white-space:nowrap!important;
+}
+.energyStrip19>div:first-child>b{
+  grid-column:1!important;
+  grid-row:2!important;
+  display:block!important;
+  height:auto!important;
+  line-height:.98!important;
+  margin:0!important;
+  font-size:25px!important;
+  text-align:right!important;
+}
+.energyStrip19>div:first-child>b::after{content:none!important}
+.energyStrip19>div:first-child>small{
+  grid-column:2!important;
+  grid-row:2!important;
+  display:block!important;
+  visibility:visible!important;
+  height:auto!important;
+  line-height:1!important;
+  margin:0!important;
+  align-self:end!important;
+  text-align:left!important;
+  font-size:12px!important;
+  font-weight:800!important;
+  color:#142036!important;
+  white-space:nowrap!important;
+}
+.summary19 .deficitMini{
+  border-left:0!important;
+  padding-left:14px!important;
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  grid-template-rows:22px auto auto!important;
+  justify-items:center!important;
+  align-content:center!important;
+  row-gap:8px!important;
+  text-align:center!important;
+}
+.summary19 .deficitMini>span{
+  width:100%!important;
+  height:auto!important;
+  line-height:1.2!important;
+  margin:0!important;
+  font-size:14px!important;
+  font-weight:850!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+}
+.summary19 .deficitMini>b{
+  width:100%!important;
+  display:block!important;
+  height:auto!important;
+  line-height:1.05!important;
+  margin:0!important;
+  font-size:25px!important;
+  text-align:center!important;
+}
+.summary19 .deficitMini>small{
+  display:block!important;
+  height:auto!important;
+  line-height:1.28!important;
+  margin:0!important;
+  text-align:center!important;
+  font-size:11px!important;
+}
+
+@media(max-width:760px){
+  .compare{
+    grid-template-columns:.86fr 1.12fr .56fr 1.12fr .86fr!important;
+    gap:2px!important;
+    padding:16px 10px 22px!important;
+  }
+  .compare>div:first-child,
+  .compare>div:last-of-type{max-width:110px!important}
+  .compare>div:first-child>b,
+  .compare>div:last-of-type>b{font-size:15px!important}
+  .compare .delta b{font-size:14px!important}
+  .compare .delta span{font-size:12px!important}
+  .energyStrip19{
+    grid-template-columns:1fr 1fr!important;
+  }
+  .energyStrip19>div:first-child{padding-right:12px!important;column-gap:6px!important}
+  .energyStrip19>div:first-child>b,
+  .summary19 .deficitMini>b{font-size:23px!important}
+  .energyStrip19>div:first-child>small{font-size:11px!important}
+  .summary19 .deficitMini>span,
+  .energyStrip19>div:first-child>span{font-size:13px!important}
+}
+@media(max-width:390px){
+  .compare{
+    grid-template-columns:.88fr 1.08fr .54fr 1.08fr .88fr!important;
+  }
+  .compare>div:first-child>b,
+  .compare>div:last-of-type>b{font-size:14px!important}
+  .compare .delta b{font-size:13px!important}
+  .energyStrip19{
+    grid-template-columns:1fr!important;
+  }
+  .energyStrip19>div:first-child{
+    border-right:0!important;
+    border-bottom:1px solid #b8d8c5!important;
+    padding:0 0 12px!important;
+    margin-bottom:12px!important;
+  }
+  .summary19 .deficitMini{
+    padding:0!important;
+  }
+}
+
+
+/* V1.8.4 — sync + food-card compression + TDEE alignment */
+.dayCardHead{justify-content:flex-start!important}
+.dayCardHead span{display:none!important}
+.mealRow strong{font-weight:900!important;font-size:14px!important;color:#20323d!important}
+.dayTotal{grid-template-columns:1fr!important;justify-items:end!important;padding:9px 14px 11px!important}
+.dayTotal span{display:none!important}
+.dayTotal b{font-size:14px!important;line-height:1.2!important;white-space:nowrap!important;text-align:right!important}
+.dayTotal b small{display:inline!important;font-size:14px!important;color:#20323d!important;font-weight:700!important}
+
+.energyStrip19{display:grid!important;grid-template-columns:1fr 1fr!important;gap:0!important;align-items:stretch!important}
+.energyStrip19>div:first-child,
+.summary19 .deficitMini{display:grid!important;grid-template-rows:20px minmax(34px,auto) 18px!important;align-items:center!important;justify-items:center!important}
+.energyStrip19>div:first-child{border-right:1px solid #b8d8c5!important;padding-right:14px!important}
+.summary19 .deficitMini{padding-left:14px!important;text-align:center!important}
+.energyStrip19>div:first-child>span,
+.summary19 .deficitMini>span{font-size:14px!important;font-weight:850!important;line-height:1.15!important;white-space:nowrap!important;text-align:center!important;width:100%}
+.energyStrip19>div:first-child>b,
+.summary19 .deficitMini>b{font-size:25px!important;line-height:1!important;margin:0!important;white-space:nowrap!important;text-align:center!important;width:100%}
+.energyStrip19>div:first-child>small,
+.summary19 .deficitMini>small{display:block!important;height:auto!important;line-height:1.1!important;font-size:11px!important;text-align:center!important;width:100%;margin:0!important;color:#5f7178!important;visibility:visible!important}
+.energyStrip19>div:first-child>b::after{content:''!important}
+
+@media(max-width:390px){
+  .dayTotal b,.dayTotal b small{font-size:12px!important}
+  .energyStrip19{grid-template-columns:1fr!important}
+  .energyStrip19>div:first-child{border-right:0!important;border-bottom:1px solid #b8d8c5!important;padding:0 0 10px!important;margin-bottom:10px!important}
+  .summary19 .deficitMini{padding-left:0!important}
+}
