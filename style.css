@@ -604,3 +604,7 @@ nav{background:var(--nav)}
 /* V1.8.7 — ONLY: fine-tune left TDEE vertical alignment */
 .energyStrip19>div:first-child>b{transform:translateY(-4px)!important}
 .energyStrip19>div:first-child>small{transform:translateY(8px)!important}
+
+
+/* V1.8.8 — ONLY: center the 2,220 value horizontally in the left TDEE column */
+.energyStrip19>div:first-child>b{grid-column:1/-1!important;justify-self:center!important;text-align:center!important}

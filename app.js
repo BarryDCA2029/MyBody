@@ -38,7 +38,7 @@ render();
 // V1.9.5 PWA update support. Does not alter localStorage.
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js?v=1.8.7", {updateViaCache:"none"})
+    navigator.serviceWorker.register("./sw.js?v=1.8.8", {updateViaCache:"none"})
       .then(reg => reg.update())
       .catch(() => {});
   });
