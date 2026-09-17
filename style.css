@@ -344,3 +344,30 @@ nav{background:var(--nav)}
   display:block!important;height:18px!important;line-height:18px!important;margin:0!important;text-align:center!important;
 }
 .energyStrip19>div:first-child>small{visibility:hidden!important}
+
+/* V1.8.2 — progress comparison balance only */
+/* Give the two body figures more room by tightening the side data columns and center delta. */
+.compare{grid-template-columns:.88fr 1.12fr .62fr 1.12fr .88fr!important;gap:5px!important}
+/* Pull both figures slightly toward the centre without changing the image assets. */
+.compare .bodyPhoto.start{background-position:58% center!important}
+.compare .bodyPhoto.now{background-position:42% center!important}
+/* Start/current labels and weights use matching typography and stay on one line. */
+.compare>div:first-child,.compare>div:last-of-type{align-self:start!important;padding-top:5px!important}
+.compare>div:first-child>span,.compare>div:last-of-type>span{font-size:inherit!important;line-height:24px!important;min-height:24px!important}
+.compare>div:first-child>b,.compare>div:last-of-type>b{font-size:17px!important;line-height:1.2!important;white-space:nowrap!important;letter-spacing:-.25px!important}
+/* Delta is secondary information: smaller and always one line. */
+.compare .delta b{font-size:16px!important;line-height:1.1!important;white-space:nowrap!important}
+.compare .delta span{font-size:13px!important}
+/* Keep the approved extra lower breathing room. */
+.compare{padding-bottom:24px!important}
+.compare>p{margin-top:12px!important}
+@media(max-width:760px){
+ .compare{grid-template-columns:.88fr 1.15fr .58fr 1.15fr .88fr!important;gap:3px!important;padding-bottom:22px!important}
+ .compare>div:first-child>b,.compare>div:last-of-type>b{font-size:15px!important}
+ .compare .delta b{font-size:14px!important}
+ .compare .delta span{font-size:12px!important}
+}
+@media(max-width:390px){
+ .compare>div:first-child>b,.compare>div:last-of-type>b{font-size:14px!important}
+ .compare .delta b{font-size:13px!important}
+}
