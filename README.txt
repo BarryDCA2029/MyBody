@@ -1,39 +1,10 @@
-MY BODY V1.9.5 BRIDGE
+MY BODY V1.9.6
 
-- Large legacy backup button on Home.
-- Backup exporter is embedded directly in index.html and reads mybody_v12_data.
-- backup.html included as a direct same-origin backup page.
-- Service worker/cache bumped to V1.9.5.
-- Does not clear or rename localStorage.
-
-MY BODY V1.9.4
-
-New in V1.9.4:
-- Adds explicit Backup / Import migration for moving local data between old and new Home Screen installs.
-- Export contains the current mybody_v12_data payload (weights, food, activity, water, Mounjaro, settings, planner, IF history).
-- Import validates the backup and saves the current local data as mybody_v12_data_before_import before replacing it.
-- Keeps the same primary localStorage key: mybody_v12_data.
-- PWA cache/version bumped to V1.9.4.
-
-MY BODY V1.9.3
-
-Updated in V1.9.3:
-- New premium app icon applied for PWA / Home Screen.
-- Manifest, cache version, and icon links updated for install refresh.
-
-MY BODY V1.9.2
-
-New in V1.9.8:
-- Home weight area split 60/40: Current Weight + IF 14:10.
-- IF schedule fixed to eating 08:00–18:00 and fasting 18:00–08:00.
-- Live countdown changes automatically between eating and fasting windows.
-- Daily IF result can be marked Success / Not successful after the fasting window starts.
-- IF history keeps unrecorded days neutral and shows success rate + streak.
-- Preserves the existing localStorage key mybody_v12_data and all prior data.
-- PWA cache/version bumped to V1.9.8.
-
-V1.9.8: Date is two lines (Month D, YYYY / weekday); IF countdown uses HH:MM:SS; eating/fasting progress bar restored.
-
-V1.9.8: final Home polish — date card lower/right and more translucent, IF content centered, current-weight figure reduced 3%, IF countdown reduced 2%.
-
-V1.6: Date and weekday increased 5%; version moved directly beneath the date at the lower-right of the hero.
+Final cleanup after successful data migration:
+- Removes the temporary legacy-data bridge banner.
+- Keeps permanent Settings / Backup / Restore access from Upcoming & Recurrent.
+- Dashboard now shows Calorie Deficit as one full-width focal card.
+- TDEE remains stored in settings and shown in the deficit hint; it can still be edited from the Food page.
+- Keeps the premium app icon from V1.9.3.
+- Preserves localStorage key: mybody_v12_data.
+- No data-clearing code added.

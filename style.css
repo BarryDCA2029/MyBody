@@ -666,10 +666,15 @@ nav{background:var(--nav)}
 @media(max-width:520px){.backupSteps{grid-template-columns:1fr}.backupStats{grid-template-columns:repeat(3,1fr)}.backupStats>span{grid-column:1/-1}}
 
 
-/* V1.9.5 legacy-data bridge: intentionally isolated from existing app layout */
-.legacyBackupBridge{max-width:1120px;margin:12px auto 0;padding:14px 18px;border-radius:20px;background:#fff8df;border:1px solid #ecd58b;box-shadow:0 8px 20px rgba(55,45,15,.08);display:flex;align-items:center;justify-content:space-between;gap:14px;position:relative;z-index:6}
-.legacyBackupBridge div{min-width:0}
-.legacyBackupBridge b{display:block;font-size:16px;color:#503b00}
-.legacyBackupBridge small{display:block;margin-top:3px;font-size:12px;color:#746128}
-.legacyBackupBridge button{border:0;border-radius:15px;padding:12px 16px;background:#173548;color:#fff;font-weight:900;white-space:nowrap;box-shadow:0 6px 14px rgba(23,53,72,.18)}
-@media(max-width:620px){.legacyBackupBridge{margin:10px 12px 0;padding:12px;display:block}.legacyBackupBridge button{width:100%;margin-top:10px;padding:13px}.legacyBackupBridge b{font-size:15px}}
+
+/* V1.9.6 — final dashboard cleanup + permanent Settings/Backup */
+.deficitOnlyCard{margin-top:10px;background:#eff9f0;border-radius:18px;padding:18px 16px 16px;text-align:center;cursor:pointer;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.deficitOnlyCard>span{display:block;font-size:16px;font-weight:900;line-height:1.15;color:#142036}
+.deficitOnlyCard>b{display:block;margin:10px 0 8px;font-size:34px;line-height:1.05;font-weight:950;color:#d43b3b;white-space:nowrap}
+.deficitOnlyCard>small{display:block;font-size:12px;line-height:1.3;color:#657985}
+.settingsMiniCard{margin:12px 0;background:#fff;border:1px solid #dfe8ed;border-radius:18px;padding:14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center}
+.settingsMiniCard small,.settingsMiniCard span{display:block;color:#6b7f88}
+.settingsMiniCard b{display:block;font-size:22px;color:#173548;margin:2px 0}
+.settingsMiniCard span{font-size:12px}
+.settingsMiniCard button{border:0;border-radius:14px;padding:11px 12px;background:#edf4f1;color:#315e54;font-weight:850;white-space:nowrap}
+@media(max-width:520px){.deficitOnlyCard{min-height:122px;padding:16px 12px}.deficitOnlyCard>b{font-size:30px}.settingsMiniCard{grid-template-columns:1fr}.settingsMiniCard button{width:100%}}
