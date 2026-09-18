@@ -1,3 +1,7 @@
+MY BODY V2.0
+
+V2.0: Calorie Deficit card layout corrected to a true single-column full-width card. TDEE remains stored in the system and shown only in the explanatory line. Existing local data is preserved.
+
 MY BODY V1.9.6
 
 Final cleanup after successful data migration:

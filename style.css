@@ -678,3 +678,52 @@ nav{background:var(--nav)}
 .settingsMiniCard span{font-size:12px}
 .settingsMiniCard button{border:0;border-radius:14px;padding:11px 12px;background:#edf4f1;color:#315e54;font-weight:850;white-space:nowrap}
 @media(max-width:520px){.deficitOnlyCard{min-height:122px;padding:16px 12px}.deficitOnlyCard>b{font-size:30px}.settingsMiniCard{grid-template-columns:1fr}.settingsMiniCard button{width:100%}}
+
+
+/* V2.0 — surgical fix: Calorie Deficit card is one full-width column */
+.summary19>.deficitOnlyCard{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:100%!important;
+  grid-template-columns:none!important;
+  gap:0!important;
+  margin-top:10px!important;
+  padding:18px 16px 16px!important;
+  text-align:center!important;
+}
+.summary19>.deficitOnlyCard>span{
+  display:block!important;
+  width:100%!important;
+  text-align:center!important;
+  font-size:16px!important;
+  font-weight:900!important;
+  line-height:1.15!important;
+  white-space:nowrap!important;
+}
+.summary19>.deficitOnlyCard>b{
+  display:block!important;
+  width:100%!important;
+  text-align:center!important;
+  margin:10px 0 8px!important;
+  font-size:34px!important;
+  line-height:1.05!important;
+  font-weight:950!important;
+  color:#d43b3b!important;
+  white-space:nowrap!important;
+}
+.summary19>.deficitOnlyCard>small{
+  display:block!important;
+  width:100%!important;
+  text-align:center!important;
+  font-size:12px!important;
+  line-height:1.3!important;
+  color:#657985!important;
+  white-space:nowrap!important;
+}
+@media(max-width:520px){
+  .summary19>.deficitOnlyCard{padding:16px 10px!important;min-height:122px!important}
+  .summary19>.deficitOnlyCard>b{font-size:30px!important}
+  .summary19>.deficitOnlyCard>small{font-size:11.5px!important}
+}
