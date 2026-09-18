@@ -1,4 +1,4 @@
-MY BODY V1.9
+MY BODY V1.9.2
 
 New in V1.9.8:
 - Home weight area split 60/40: Current Weight + IF 14:10.

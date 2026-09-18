@@ -619,3 +619,24 @@ nav{background:var(--nav)}
 .weightHistoryList .historyItem>div:first-child>b{display:block!important;line-height:1.15!important;margin:0!important}
 .weightHistoryList .historyItem>div:first-child>small{display:block!important;line-height:1.2!important;margin:0!important;color:#71848b!important}
 .summary19 #deficitToday{color:#d43b3b!important}
+
+
+/* V1.9.2 Water Log: actual intake, no baseline */
+.waterHero b{font-variant-numeric:tabular-nums}
+.waterQuickAdd{margin:14px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.waterQuickAdd button{border:1px solid #b9ddea;background:#e9f7fd;color:#0964aa;border-radius:15px;padding:12px 6px;font-weight:850;min-height:48px}
+.waterQuickAdd .custom{grid-column:1/-1;background:#edf4f1;border-color:#d2e5de;color:#315e54}
+.waterHistory .listTitle{margin-bottom:10px}
+.waterRow{background:#fff;border:1px solid #dfe8e6;border-radius:19px;padding:12px 12px 12px 14px;margin-bottom:9px;display:grid;grid-template-columns:minmax(0,1fr) auto 40px 40px;gap:8px;align-items:center}
+.waterRow>div b,.waterRow>div small{display:block}
+.waterRow>div small{color:#71848b;margin-top:2px}
+.waterRow>strong{font-size:20px;color:#078a56;white-space:nowrap}
+.waterRow button{width:38px;height:38px;border-radius:12px;font-size:17px;font-weight:850}
+.waterEdit{border:1px solid #b8dcf4;background:#eaf6ff;color:#1478c8}
+.waterDelete{border:1px solid #f1c4c1;background:#fff0ef;color:#c13e36}
+.waterEmpty{padding:34px 18px!important}
+.legacyWater{margin-top:16px;background:#f4f7f8;border-radius:16px;padding:12px 14px;color:#667a84}
+.legacyWater summary{font-weight:800;cursor:pointer;color:#526971}
+.legacyWater>p{font-size:12px;margin:8px 0}
+.legacyWaterRow{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid #e0e8ea;font-size:13px}
+@media(max-width:520px){.waterQuickAdd{grid-template-columns:1fr 1fr}.waterQuickAdd .custom{grid-column:1/-1}.waterRow{grid-template-columns:minmax(0,1fr) auto 38px 38px}.waterRow>strong{font-size:18px}}
