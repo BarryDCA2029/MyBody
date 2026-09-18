@@ -1,3 +1,20 @@
+MY BODY V1.9.5 BRIDGE
+
+- Large legacy backup button on Home.
+- Backup exporter is embedded directly in index.html and reads mybody_v12_data.
+- backup.html included as a direct same-origin backup page.
+- Service worker/cache bumped to V1.9.5.
+- Does not clear or rename localStorage.
+
+MY BODY V1.9.4
+
+New in V1.9.4:
+- Adds explicit Backup / Import migration for moving local data between old and new Home Screen installs.
+- Export contains the current mybody_v12_data payload (weights, food, activity, water, Mounjaro, settings, planner, IF history).
+- Import validates the backup and saves the current local data as mybody_v12_data_before_import before replacing it.
+- Keeps the same primary localStorage key: mybody_v12_data.
+- PWA cache/version bumped to V1.9.4.
+
 MY BODY V1.9.3
 
 Updated in V1.9.3:

@@ -640,3 +640,36 @@ nav{background:var(--nav)}
 .legacyWater>p{font-size:12px;margin:8px 0}
 .legacyWaterRow{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid #e0e8ea;font-size:13px}
 @media(max-width:520px){.waterQuickAdd{grid-template-columns:1fr 1fr}.waterQuickAdd .custom{grid-column:1/-1}.waterRow{grid-template-columns:minmax(0,1fr) auto 38px 38px}.waterRow>strong{font-size:18px}}
+
+
+/* V1.9.4 — explicit local backup/import migration */
+.dataTransferBtn{width:100%;margin-top:10px;border:0;border-radius:16px;padding:12px;background:#eef5f8;color:#24566f;font-weight:850;cursor:pointer}
+.backupPanel{padding:14px}
+.backupHero{padding:20px;border-radius:24px;background:linear-gradient(145deg,#173f57,#4c747a);color:#fff}
+.backupHero span{display:block;font-size:12px;font-weight:850;letter-spacing:1px;opacity:.78}
+.backupHero b{display:block;font-size:27px;margin-top:4px}
+.backupHero p{margin:7px 0 0;line-height:1.45;opacity:.92}
+.backupSteps{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.backupSteps>div{background:#fff;border:1px solid #dfe8ed;border-radius:18px;padding:14px}
+.backupSteps b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e5f4ea;color:#087b4c}
+.backupSteps span{display:block;font-weight:900;margin-top:7px}
+.backupSteps small{display:block;color:#6b7f88;line-height:1.4;margin-top:3px}
+.backupStats{background:#fff;border:1px solid #dfe8ed;border-radius:18px;padding:14px;display:grid;grid-template-columns:repeat(5,1fr);gap:8px;text-align:center}
+.backupStats>span{grid-column:1/-1;text-align:left;font-weight:900;margin-bottom:2px}
+.backupStats small{display:block;color:#6b7f88;font-size:11px}
+.backupStats b{display:block;font-size:21px;margin-top:2px}
+.backupExportBtn,.backupImportBtn{width:100%;border:0;border-radius:17px;padding:14px;margin-top:10px;font-weight:900;font-size:17px;cursor:pointer}
+.backupExportBtn{background:#078a56;color:#fff}
+.backupImportBtn{background:#dff2ff;color:#0964aa}
+.backupStatus{font-size:12px;color:#657985;line-height:1.45;text-align:center;padding:8px 4px;margin:8px 0 0}
+.backupStatus.error{color:#b93b3b}
+@media(max-width:520px){.backupSteps{grid-template-columns:1fr}.backupStats{grid-template-columns:repeat(3,1fr)}.backupStats>span{grid-column:1/-1}}
+
+
+/* V1.9.5 legacy-data bridge: intentionally isolated from existing app layout */
+.legacyBackupBridge{max-width:1120px;margin:12px auto 0;padding:14px 18px;border-radius:20px;background:#fff8df;border:1px solid #ecd58b;box-shadow:0 8px 20px rgba(55,45,15,.08);display:flex;align-items:center;justify-content:space-between;gap:14px;position:relative;z-index:6}
+.legacyBackupBridge div{min-width:0}
+.legacyBackupBridge b{display:block;font-size:16px;color:#503b00}
+.legacyBackupBridge small{display:block;margin-top:3px;font-size:12px;color:#746128}
+.legacyBackupBridge button{border:0;border-radius:15px;padding:12px 16px;background:#173548;color:#fff;font-weight:900;white-space:nowrap;box-shadow:0 6px 14px rgba(23,53,72,.18)}
+@media(max-width:620px){.legacyBackupBridge{margin:10px 12px 0;padding:12px;display:block}.legacyBackupBridge button{width:100%;margin-top:10px;padding:13px}.legacyBackupBridge b{font-size:15px}}
