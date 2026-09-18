@@ -1,3 +1,9 @@
+MY BODY V1.9.3
+
+Updated in V1.9.3:
+- New premium app icon applied for PWA / Home Screen.
+- Manifest, cache version, and icon links updated for install refresh.
+
 MY BODY V1.9.2
 
 New in V1.9.8:
