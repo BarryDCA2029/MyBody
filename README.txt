@@ -1,3 +1,15 @@
+MY BODY V2.1
+
+New in V2.1:
+- Activity page now has Activity / 10 Days Mission tabs.
+- Hourly mission timeline 06:00–21:00 with Core and Check-in items.
+- Auto-checks from Weight, Food, Water, Activity, IF and Mounjaro logs.
+- 4 progress views: Mission, Calories, Protein and Water.
+- Meal plan quantities and adherence buttons (full / half / adjusted).
+- Day 1–10 history and NEXT mission card.
+- Wednesday Mounjaro 7.5 mg mission appears automatically.
+- Existing localStorage key and all prior data preserved.
+
 MY BODY V2.0
 
 V2.0: Calorie Deficit card layout corrected to a true single-column full-width card. TDEE remains stored in the system and shown only in the explanatory line. Existing local data is preserved.
