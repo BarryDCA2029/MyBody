@@ -1,3 +1,11 @@
+MY BODY V2.2
+
+New in V2.2:
+- Estimated Activity Burn calculated from activity type, duration, and latest recorded weight.
+- Home Activity card shows minutes + estimated kcal.
+- Activity history shows daily burn totals, 7-day burn, and all-time burn.
+- Activity burn remains separate from TDEE / Calorie Deficit.
+
 MY BODY V2.1
 
 New in V2.1:
