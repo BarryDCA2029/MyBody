@@ -1,3 +1,10 @@
+MY BODY V2.3
+
+New in V2.3:
+- Backup export now shares exactly one JSON file on iOS.
+- Removed share title text that could appear as a second saved item.
+- Existing data/localStorage is preserved.
+
 MY BODY V2.2
 
 New in V2.2:
