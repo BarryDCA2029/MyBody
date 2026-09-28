@@ -1,3 +1,12 @@
+MY BODY V2.4
+
+Updated in V2.4:
+- Activity entry now uses a 4-option dropdown: กายบริหาร / เดิน / ปั่นจักรยาน / ออกกำลังกาย.
+- Live Estimated Activity Burn preview from activity, minutes, and latest weight.
+- New activity records store the estimate inputs for stable history.
+- Activity burn remains separate from TDEE / Calorie Deficit.
+- Preserves the existing localStorage key and all prior data.
+
 MY BODY V2.3
 
 New in V2.3:
