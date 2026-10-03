@@ -1,3 +1,10 @@
+MY BODY V2.5
+
+Updated in V2.5:
+- Activity dropdown adds ทำงานบ้าน and ระบุเอง.
+- Choosing ระบุเอง reveals a custom activity field and keeps estimated burn calculation.
+- TDEE / Calorie Deficit logic unchanged.
+
 MY BODY V2.4
 
 Updated in V2.4:
